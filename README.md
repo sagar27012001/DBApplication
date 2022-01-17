@@ -1,1 +1,1 @@
-# Simple CRUD using Java Spring Boot
+# CRUD operations using Java Spring Boot

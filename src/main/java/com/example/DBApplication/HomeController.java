@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import antlr.collections.List;
-
 @Controller
 public class HomeController {
     @Autowired
@@ -29,9 +27,10 @@ public class HomeController {
         ModelAndView mv = new ModelAndView();
         Alien alien = repo.findById(aid).orElse(new Alien());
         mv.setViewName("search.jsp");
+        System.out.println(repo.findByAname("sagar"));
+        System.out.println(repo.findByAidGreaterThan(2));
+        System.out.println(repo.findByAnameSorted("sagar"));
         mv.addObject(alien);
-        Alien[] alien2 = repo.findByAname("sagar");
-        mv.addObject(alien2);
         return mv;
     }
 

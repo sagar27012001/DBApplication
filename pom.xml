@@ -43,6 +43,12 @@
             <artifactId>tomcat-jasper</artifactId>
             <version>9.0.56</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.13.1</version>
+        </dependency>
 
 	</dependencies>
 
